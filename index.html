@@ -1,84 +1,40 @@
-<!DOCTYPE HTML>
-<html hreflang="id">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>BKPSDMD Kabupaten Merangin</title>
-<link href="index.css" rel="stylesheet" type="text/css">
+<link href="home.css" rel="stylesheet" type="text/css">
 </head>
-	
-<body>
-	<div class="header">
-		<logo>
-			<a href="index.html"><img src="icon/BKDLogo.png" height="75" style="max-width:auto;"/></a>
-		</logo>
-	</div>
-	<div class="navbar">
-		<span>
-			<a href="#">PROFIL</a>
-			<a href="#">BERITA</a>
-		<div class="dropdown">
-			<button class="dropbtn">LAYANAN 
-			  <i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-			  <div class="headerdd">
-				<h3>Layanan Badan Kepegawaian dan Pengembangan SDM Kab. Merangin</h3>
-			  </div>   
-			  <div class="row">
-				<div class="column">
-				  <h3>Sekretariat</h3>
-				  <a href="#">Perencanaan</a>
-				  <a href="#">Keuangan</a>
-				  <a href="#">Umum</a>
-				</div>
-				<div class="column">
-				  <h3>Kepegawaian</h3>
-				  <a href="#">Pengadaan</a>
-				  <a href="#">Kepangkatan</a>
-				  <a href="#">Jabatan</a>
-				</div>
-				<div class="column">
-				  <h3>Pengembangan SDM</h3>
-				  <a href="#">Cuti</a>
-				  <a href="#">Tugas Belajar</a>
-				  <a href="#">Bimbingan</a>
-				</div>
-			  </div>
-			</div>
-		  </div> 
 
-			<a href="#">GALERI</a>
-			<a href="#">PENGUMUMAN</a>
-			<a href="#">KONTAK</a>
-		</span>
-	</div>		
-	<div class="content">
-	  <h3>Sticky Navigation Example</h3>
-	  <p>The navbar will stick to the top when you reach its scroll position.</p>
-	  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-	  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-	</div>
-	
-	<img class="mySlides" src="images/index_pict/1.jpg" style="width:100%">
-	<img class="mySlides" src="images/index_pict/2.jpg" style="width:100%">
-	<img class="mySlides" src="images/index_pict/3.jpg" style="width:100%">
-	
-	<div class="footer">
-		<p> Copyright &copy; 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin.</p>
-	</div>
-<!--	
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#1" class="active" id="logoBKD"><img src="icon/BKDLogo.png" height="35"/></a>
+  <a href="#2">PROFIL</a>
+  <a href="#3">LAYANAN</a>
+  <a href="#4">GALERI</a>
+  <a href="#5">PENGUMUMAN</a>
+  <a href="#6">KONTAK</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
 <script>
-	function myFunction() {
-	  var x = document.getElementById("myNavbar");
-	  if (x.className === "navbar") {
-		x.className += " responsive";
-	  } else {
-		x.className = "navbar";
-	  }
-	}
-</script>-->
-	
-</body>	
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
 </html>
