@@ -5,29 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>BKPSDMD Kabupaten Merangin</title>
-<link href="home.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="icon/IconWeb.png">
+<link href="index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-<div class="topnav" id="myTopnav">
-  <a href="#1" class="active" id="logoBKD"><img src="icon/BKDLogo.png" height="35"/></a>
-  <a href="#2">PROFIL</a>
-  <a href="#3">LAYANAN</a>
-  <a href="#4">GALERI</a>
-  <a href="#5">PENGUMUMAN</a>
-  <a href="#6">KONTAK</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+<div class="header">
+  <p><img src="icon/MeranginLogo.png" height="100"/></p>
+  <img src="icon/BKPLogo.png" height="50"/>
+  <h1>SELAMAT DATANG</h1>
+	<!--<h2>DI WEBSITE </h2>
+	<h2>BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA DAERAH (BKPSDMD)</h2>
+  <h2>KABUPATEN MERANGIN</h2>-->
 </div>
+	
+<div class="topnav" id="mynavBtn">
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
+	<div class="navBtn" >
+		<a href="#2">PROFIL</a>
+		<a href="#3">BERITA</a>
+		<a href="#4">LAYANAN</a>
+		<a href="#5">GALERI</a>
+		<a href="#6">KONTAK</a>
+		<a href="#7">PENGUMUMAN</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+	</div>
+	<div class="navLogo">
+		<a href="#1"><img src="icon/BKPLogo.png" id="bkpsdmdLogo"/></a>	
+	</div>
+</div>
+	
+<div style="padding-left:0px">
+  <h2>Responsive Topnav Example v.2</h2>
   <p>Resize the browser window to see how it works.</p>
 </div>
-
+<div class="content">
+  <h3>Sticky Navigation Example</h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	<img class="mySlides" src="images/index_pict/1.jpg" style="width:100%">
+	<img class="mySlides" src="images/index_pict/3.jpg" style="width:100%">
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<div class="footer">
+	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
+</div>
+	
 <script>
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("mynavBtn");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
