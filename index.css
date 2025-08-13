@@ -67,20 +67,23 @@ body {
 	  display: none;
 	}
   .navBtn a.icon {
+	  float: right;
     display: block;
 	top: 0;
-	position: ;
+	
   }
 }
 
 @media screen and (max-width: 950px) {
   .topnav.responsive {
-	  position: sticky; 
+	  position: sticky;
+	  float: left;
 	  width: 100%;
 	}
   .topnav.responsive .icon {
 	position: absolute;
-	  right: 0;
+	right: 0;
+	  top:0;
   }
   .topnav.responsive a {
     float: none;
