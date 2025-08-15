@@ -20,25 +20,37 @@
 </div>
 	
 <div class="topnav" id="mynavBtn">
-
-	<div class="navBtn" >
-		<a href="#2">PROFIL</a>
-		<a href="#3">BERITA</a>
-		<a href="#4">LAYANAN</a>
-		<a href="#5">GALERI</a>
-		<a href="#6">KONTAK</a>
-		<a href="#7">PENGUMUMAN</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
-	</div>
+	
 	<div class="navLogo">
 		<a href="#1"><img src="icon/BKPLogo.png" id="bkpsdmdLogo"/></a>	
 	</div>
+	<span>
+	<div class="navRight" >
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">PROFIL <i class="fa fa-caret-down"></i></button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#1A">Visi dan Misi</a>
+			<a href="#1B">Selayang Pandang</a>
+			<a href="#1C">Sejarah</a>
+			<a href="#1D">Struktur Organisasi</a>
+			<a href="#1E">Tugas Pokok dan Fungsi</a>
+		  </div>
+		</div>
+		<a href="#3">BERITA</a>
+		<a href="#4">LAYANAN</a>
+		<a href="#5">TRANSPARANSI</a>
+		<a href="#5">P.P.I.D.</a>
+		<a href="#6">GALERI</a>
+		<a href="#7">PENGUMUMAN</a>
+		<!--<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>-->
+		<a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	</span>
+
 </div>
 	
-<div style="padding-left:0px">
-  <h2>Responsive Topnav Example v.2</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
+<!------------------- KONTENT ----------------------------------->	
+	
 <div class="content">
   <h3>Sticky Navigation Example</h3>
   <p>The navbar will stick to the top when you reach its scroll position.</p>
@@ -65,7 +77,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>
-
+</script>	
 </body>
 </html>
