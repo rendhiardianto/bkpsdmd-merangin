@@ -104,13 +104,17 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+/*
 .dropdown:hover .dropdown-content {
   display: block;
+}*/
+.show {
+	display: block;
 }
-
 @media screen and (max-width: 1050px) {
-  .navRight a:not(:empty), .dropdown .dropbtn { display: none;}
+  .navRight a:not(:empty), .dropdown .dropbtn { 
+	  display: none;
+	}
   .topnav a.icon {
 	float: right;
     display: block;
