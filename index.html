@@ -14,9 +14,8 @@
   <p><img src="icon/MeranginLogo.png" height="100"/></p>
   <img src="icon/BKPLogo.png" height="50"/>
   <h1>SELAMAT DATANG</h1>
-	<!--<h2>DI WEBSITE </h2>
-	<h2>BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA DAERAH (BKPSDMD)</h2>
-  <h2>KABUPATEN MERANGIN</h2>-->
+	<h2>DI PORTAL RESMI </h2>
+	<h2>BKPSDMD KABUPATEN MERANGIN</h2>
 </div>
 	
 <div class="topnav" id="mynavBtn">
@@ -28,7 +27,7 @@
 	<div class="navRight" >
 		
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">PROFIL <i class="fa fa-caret-down"></i></button>
+			<button onclick="myFunction1()" class="dropbtn">PROFIL <i class="fa fa-caret-down"></i></button>
 		  <div id="myDropdown" class="dropdown-content">
 			<a href="#1A">Visi dan Misi</a>
 			<a href="#1B">Selayang Pandang</a>
@@ -39,7 +38,7 @@
 		</div>
 		
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">BERITA <i class="fa fa-caret-down"></i></button>
+			<button onclick="myFunction2()" class="dropbtn">BERITA <i class="fa fa-caret-down"></i></button>
 		  <div id="myDropdown2" class="dropdown-content">
 			<a href="#1A">Berita Terkini</a>
 			<a href="#1B">Agenda Kegiatan</a>
@@ -48,7 +47,7 @@
 		
 		<a href="#4">LAYANAN</a>
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">TRANSPARANSI <i class="fa fa-caret-down"></i></button>
+			<button onclick="myFunction3()" class="dropbtn">TRANSPARANSI <i class="fa fa-caret-down"></i></button>
 		  <div id="myDropdown3" class="dropdown-content">
 			<a href="#1A">Rencana Stategis</a>
 			<a href="#1B">Rencana Kerja</a>
@@ -67,7 +66,7 @@
 		<a href="#5">P.P.I.D.</a>
 		
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">GALERI <i class="fa fa-caret-down"></i></button>
+			<button onclick="myFunction4()" class="dropbtn">GALERI <i class="fa fa-caret-down"></i></button>
 		  <div id="myDropdown4" class="dropdown-content">
 			<a href="#1A">Album Foto</a>
 			<a href="#1B">Album Video</a>
@@ -95,7 +94,6 @@
 	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
 </div>
 <!------------------- BATAS AKHIR KONTENT ----------------------------------->
-	
 <script>
 function myFunction() {
   var x = document.getElementById("mynavBtn");
@@ -106,7 +104,74 @@ function myFunction() {
   }
 }
 </script>
-	
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown2 = document.getElementById("myDropdown2");
+    if (myDropdown2.classList.contains('show')) {
+      myDropdown2.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown3 = document.getElementById("myDropdown3");
+    if (myDropdown3.classList.contains('show')) {
+      myDropdown3.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown4 = document.getElementById("myDropdown4");
+    if (myDropdown4.classList.contains('show')) {
+      myDropdown4.classList.remove('show');
+    }
+  }
+}
+</script>
+	
 </body>
 </html>
