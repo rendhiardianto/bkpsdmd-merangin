@@ -189,6 +189,7 @@
 /*--------------------------------------- SlideShow -----------------------------------*/
 .mySlides {
 	display: none;
+	padding-top: 0px;
 }
 img {
 	vertical-align: middle;
@@ -198,8 +199,8 @@ img {
 .slideshow-container {
   width: auto;
   position: inherit;
-  margin-left: 70px;
-	margin-right: 70px;
+  margin-left: 50px;
+	margin-right: 50px;
 }
 
 /* Next & previous buttons */
