@@ -2,39 +2,139 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>BKPSDMD Kabupaten Merangin</title>
-<link href="home.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="icon/IconWeb.png">
+<link href="index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<div class="header">
+	<img src="images/HomeHeader.png" width="100%"/>
+  <!--<p><img src="icon/MeranginLogo.png" height="100"/></p>
+  <img src="icon/BKPLogo.png" height="50"/>
+  <h1>SELAMAT DATANG</h1>
+	<h2>DI PORTAL RESMI </h2>
+	<h2>BKPSDMD KABUPATEN MERANGIN</h2>-->
+</div>
+	
+<div class="topnav" id="mynavBtn">
+	
+	<div class="navLogo">
+		<a href="#1"><img src="icon/BKPLogo3.png" id="bkpsdmdLogo"/></a>	
+	</div>
+	<span>
+	<div class="navRight" >
+		
+		<div class="dropdown">
+			<button onclick="toggleDropdown('menu1')" class="dropbtn">PROFIL <i class="fa fa-caret-down"></i></button>
+		  <div id="menu1" class="dropdown-content">
+			<a href="#1A">Visi dan Misi</a>
+			<a href="#1B">Selayang Pandang</a>
+			<a href="#1C">Sejarah</a>
+			<a href="#1D">Struktur Organisasi</a>
+			<a href="#1E">Tugas Pokok dan Fungsi</a>
+		  </div>
+		</div>
+		
+		<div class="dropdown">
+			<button onclick="toggleDropdown('menu2')" class="dropbtn">BERITA <i class="fa fa-caret-down"></i></button>
+		  <div id="menu2" class="dropdown-content">
+			<a href="#1A">Berita Terkini</a>
+			<a href="#1B">Agenda Kegiatan</a>
+		  </div>
+		</div>
+		
+		<a href="#4">LAYANAN</a>
+		
+		<div class="dropdown">
+			<button onclick="toggleDropdown('menu3')" class="dropbtn">TRANSPARANSI <i class="fa fa-caret-down"></i></button>
+		  <div id="menu3" class="dropdown-content">
+			<a href="#1A">Rencana Stategis</a>
+			<a href="#1B">Rencana Kerja</a>
+			<a href="#1B">Indikator Kinerja Utama</a>
+			<a href="#1B">Casscading</a>
+			<a href="#1B">Perjanjian Kinerja</a>
+			<a href="#1B">Rencana Aksi</a>
+			<a href="#1B">Laporan Kinerja</a>
+			<a href="#1B">Standar Operasional Prosedur</a>
+			<a href="#1B">RAPBD</a>
+			<a href="#1B">APBD</a>
+			<a href="#1B">LPPD</a>
+		  </div>
+		</div>
+		
+		<a href="#5">P.P.I.D.</a>
+		
+		<div class="dropdown">
+			<button onclick="toggleDropdown('menu4')" class="dropbtn">GALERI <i class="fa fa-caret-down"></i></button>
+		  <div id="menu4" class="dropdown-content">
+			<a href="#1A">Album Foto</a>
+			<a href="#1B">Album Video</a>
+			<a href="#1B">Template Multimedia BKPSDMD</a>
+		  </div>
+		</div>
+		
+		<a href="#7">PENGUMUMAN</a>
+		<!--<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>-->
+		<a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	</span>
 
-<div class="topnav" id="myTopnav">
-  <a href="#1" class="active" id="logoBKD"><img src="icon/BKDLogo.png" height="35"/></a>
-  <a href="#2">PROFIL</a>
-  <a href="#3">LAYANAN</a>
-  <a href="#4">GALERI</a>
-  <a href="#5">PENGUMUMAN</a>
-  <a href="#6">KONTAK</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+</div>
+	
+<!------------------- CONTENT ----------------------------------->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/index_pict/1.jpg" style="width:100%">
+  <div class="text">Caption One</div>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/index_pict/2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/index_pict/3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div class="pidato-kaban">
+	<h2> Sambutan Kepala BKPSDMD Kabupaten Merangin</h2>
+	<img src="images/Foto_Kaban.png">
+	<p>Assalamu'alaikum Warahmatullahi Wabarakaatuh</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit massa, scelerisque id tristique non, scelerisque sed ex. Etiam eget fermentum augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque interdum ligula neque. Morbi sit amet dui tristique orci facilisis tristique. Phasellus nisl quam, tincidunt ut lectus vitae, dapibus faucibus eros. Sed imperdiet sed est vehicula efficitur. Praesent ultricies non ipsum at sagittis. Donec scelerisque ligula eget hendrerit molestie.</p>
+	
+	<p>Nunc nec efficitur justo, et consequat libero. Etiam malesuada metus et dapibus convallis. Nam semper id diam sed finibus. Sed at risus vehicula, condimentum lorem in, cursus ante. Proin efficitur felis ac massa vestibulum ultricies. Phasellus a gravida nisl. Cras euismod mi et laoreet laoreet. Vivamus quis tortor blandit, semper ipsum non, molestie lorem. Aliquam hendrerit est ipsum, sit amet volutpat eros semper sit amet. Mauris in nunc mollis, feugiat lorem eget, efficitur elit. Sed leo nisl, feugiat non suscipit sit amet, vestibulum eleifend diam. Aliquam accumsan odio eget tempor lacinia.</p>
+	
+	<p>Wassalamu'alaikum Warahmatullahi Wabarakaatuh.</p>
+	
+</div>
+<!------------------- FOOTER ----------------------------------->	
+<div class="footer">
+	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
+</div>
+<!------------------- BATAS AKHIR CONTENT ---------------------------------->
+<script src="index.js"></script>
 
 </body>
 </html>
