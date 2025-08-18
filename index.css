@@ -8,7 +8,7 @@
 	src: url(file/BebasNeue.ttf);
 }
 .body {
-  margin: 0;
+  margin: 0px;
 }
 .header {
 
@@ -168,8 +168,7 @@
 }
 .pidato-kaban img {
 	float: right;
-	width: 270px;
-	position: inherit;
+	width: 300px;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
