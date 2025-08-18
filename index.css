@@ -169,8 +169,6 @@
 	float: right;
 	width: 270px;
 	position: inherit;
-	bottom: 0px;
-	right: 0px;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
