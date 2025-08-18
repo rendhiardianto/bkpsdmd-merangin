@@ -163,6 +163,7 @@
 .pidato-kaban p {
 	font-size: 20px;
 	padding-left: 30px;
+	padding-right: 30px;
 	text-align: left;
 }
 .pidato-kaban img {
@@ -281,5 +282,11 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .prev, .next,.text {font-size: 15px}
+  .prev, .next,.text {
+	  font-size: 15px
+	}
+	.slideshow-container {
+  		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
