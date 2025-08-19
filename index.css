@@ -182,6 +182,42 @@
 	}
 }
 
+.asn-rekap {
+	position: static;
+	overflow: hidden;
+	background-color: whitesmoke;
+	font-family: Bahnschrift;
+	text-align: center;
+}
+.chart-rekap {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 30px;
+	margin-bottom: 50px;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+.flex-item-half1 {
+  padding: 10px;
+  flex: 25%;
+  max-width: 300px;
+}
+.flex-item-half2 {
+  padding: 10px;
+  flex: 25%;
+  max-width: 300px;
+}
+.flex-item-half3 {
+  padding: 10px;
+  flex: 25%;
+  max-width: 300px;
+}
+.flex-item-half4 {
+  padding: 10px;
+  flex: 25%;
+  max-width: 300px;
+}
+
 .footer{
 	text-align: center;
 	font-family: Bahnschrift;
