@@ -49,7 +49,7 @@ new Chart("myChart2", {
 {
 const xValues = ["18-20", "21-30", "31-40", "41-50", "51-60", "Diatas 60"];
 const yValues = [55, 49, 44, 24, 15, 17];
-const barColors = "blue";
+const barColors = "#00aba9";
 
 new Chart("myChart3", {
   type: "bar",
@@ -82,7 +82,7 @@ new Chart("myChart3", {
 {
 const xValues = ["Baby Boomer", "Generasi X", "Generasi Y", "Generasi Z"];
 const yValues = [55, 49, 44, 24];
-const barColors = "red";
+const barColors = "#00aba9";
 
 new Chart("myChart4", {
   type: "bar",
@@ -115,7 +115,7 @@ new Chart("myChart4", {
 {
 const xValues = ["Gol I", "Gol II", "Gol III", "Gol IV"];
 const yValues = [55, 49, 44, 24];
-const barColors = "yellow";
+const barColors = "#00aba9";
 
 new Chart("myChart5", {
   type: "bar",
@@ -148,7 +148,7 @@ new Chart("myChart5", {
 {
 const xValues = ["Eselon I", "Eselon II", "Eselon III", "Eselon IV", "Eselon V"];
 const yValues = [55, 49, 44, 24, 50];
-const barColors = "green";
+const barColors = "#00aba9";
 
 new Chart("myChart6", {
   type: "bar",
@@ -181,7 +181,7 @@ new Chart("myChart6", {
 {
 const xValues = ["SD", "SLTP", "SLTA", "DI-DII", "DII", "DIV", "S1", "S2", "S3"];
 const yValues = [55, 49, 44, 24, 24, 30, 100, 30, 10];
-const barColors = "cyan";
+const barColors = "#00aba9";
 
 new Chart("myChart7", {
   type: "bar",
@@ -214,7 +214,7 @@ new Chart("myChart7", {
 {
 const xValues = ["Januari 2025", "Februari 2025", "Maret 2025", "April 2025", "Mei 2025", "Juni 2025"];
 const yValues = [55, 49, 44, 24, 25, 27];
-const barColors = "black";
+const barColors = "#00aba9";
 
 new Chart("myChart8", {
   type: "bar",

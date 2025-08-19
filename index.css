@@ -23,6 +23,7 @@
 }
 .navLogo{
 	float: left;
+	
 }
 .navLogo #bkpsdmdLogo {
 	height: 35px;
@@ -32,9 +33,11 @@
 }
 
 .navRight {
+	float: right;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background-color: #00B6F8;
+	justify-content: flex-end;
 
 }
 .navRight a {
