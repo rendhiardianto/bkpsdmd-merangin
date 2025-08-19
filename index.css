@@ -181,9 +181,7 @@
 	  width: 60%;
 	}
 }
-* {
-  box-sizing: border-box;
-}
+
 .asn-rekap {
 	position: static;
 	overflow: hidden;
@@ -195,21 +193,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
-	padding-bottom: 20px;
+	justify-content: center;
 }
-.flex-item-half1 {
-  flex: 25%;
-}
-.flex-item-half2 {
-  flex: 25%;
-
-}
-.flex-item-half3 {
-  flex: 25%;
-
-}
-.flex-item-half4 {
-  flex: 25%;	
+.chart-rekap canvas{
+	padding-bottom: 50px;
 }
 
 .footer{
