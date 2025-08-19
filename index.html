@@ -7,6 +7,7 @@
 <title>BKPSDMD Kabupaten Merangin</title>
 <link rel="shortcut icon" href="icon/IconWeb.png">
 <link href="index.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -129,12 +130,43 @@
 	<p>Wassalamu'alaikum Warahmatullahi Wabarakaatuh.</p>
 	
 </div>
+	
+<div class="rekapitulasi-asn">
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>	
+</div>
 <!------------------- FOOTER ----------------------------------->	
 <div class="footer">
 	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
 </div>
 <!------------------- BATAS AKHIR CONTENT ---------------------------------->
 <script src="index.js"></script>
+<script>
+const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yValues = [55, 49, 44, 24, 15];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
 
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+});
+</script>
 </body>
 </html>
