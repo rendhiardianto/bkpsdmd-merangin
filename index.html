@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<link href="index.css" rel="stylesheet" type="text/css">
+
 <title>BKPSDMD Kabupaten Merangin</title>
 <link rel="shortcut icon" href="icon/IconWeb.png">
-<link href="index.css" rel="stylesheet" type="text/css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -131,22 +132,24 @@
 	
 </div>
 	
-	<div class="rekapitulasi-asn"></div>
-
-<div style="width: 200px; height: 300px;">
-	<canvas id="myChart1"></canvas>
-</div>
-
-<div style="width: 200px; height: 300px; margin-top: 20px;">
-	<canvas id="myChart2"></canvas>
+<div class="asn-rekap">
+	<h2>BKPSDMD DALAM ANGKA</h2>
+	<h3>Rekapitulasi ASN Kabupaten Merangin</h3>
+		<div class="chart-rekap">
+		<canvas class="flex-item-half1" id="myChart1" style="width:100%"></canvas>	
+		<canvas class="flex-item-half2" id="myChart2" style="width:100%"></canvas>	
+		<canvas class="flex-item-half3" id="myChart3" style="width:100%"></canvas>
+		<canvas class="flex-item-half4" id="myChart4" style="width:100%"></canvas>
+		</div>
 </div>
 <!------------------- FOOTER ----------------------------------->	
 <div class="footer">
 	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
 </div>
 <!------------------- BATAS AKHIR CONTENT ---------------------------------->
+	
 <script src="index.js"></script>
 <script src="chart.js"></script>
-		
+	
 </body>
 </html>
