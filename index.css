@@ -101,13 +101,14 @@
 }
 
 .dropdown:hover .dropdown-content{
-
 }
 .dropdown .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
-
+.show {
+	display: block;
+}
 @media screen and (max-width: 1050px) {
   .navRight a:not(:empty), .dropdown .dropbtn { 
 	  display: none;
