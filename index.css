@@ -154,6 +154,7 @@
     text-align: left;
   }
 }
+/* ============================================ SAMBUTAN KABAN ==============================*/
 .pidato-kaban {
 	background-color: beige;
 	padding-bottom: 0px;
@@ -195,11 +196,9 @@
 	margin-top: 50px;
 	margin-bottom: 20px;
 	justify-content: center;
-	height: 100%;
 }
 .chart-rekap canvas{
 	padding-bottom: 50px;
-	height: 100%;
 }
 
 /* ================================== Footer Complete ======================================== */
