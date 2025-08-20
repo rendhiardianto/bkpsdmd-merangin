@@ -27,7 +27,7 @@
 	
 }
 .navLogo #bkpsdmdLogo {
-	height: 35px;
+	height: 45px;
 	padding-top: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -200,12 +200,42 @@
 	padding-bottom: 50px;
 }
 
+* {
+  box-sizing: border-box;
+	
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+	overflow: hidden;
+  float: left;
+  padding: 10px;
+	background-color: beige;
+	height: 330px;
+	font-family: "Piala Regular";
+}
+.left{
+	width: 25%;
+} 
+.right {
+  width: 40%;
+}
+.middle {
+  width: 35%;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .left, .right, .middle {
+	  width: 100%;
+	  height: auto;
+	}
+}
+
 .footer{
 	text-align: center;
 	font-family: Bahnschrift;
 	background-color: black;
 	color: white;
-	padding: 5px;
+	padding: 15px;
 }
 
 /*--------------------------------------- SlideShow -----------------------------------*/
