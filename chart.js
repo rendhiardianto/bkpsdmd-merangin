@@ -180,7 +180,7 @@ new Chart("myChart6", {
 //============================= Chart 7 =========================
 {
 const xValues = ["SD", "SLTP", "SLTA", "DI-DII", "DII", "DIV", "S1", "S2", "S3"];
-const yValues = [55, 49, 44, 24, 24, 30, 100, 30, 10];
+const yValues = [55, 49, 44, 24, 24, 30, 80, 30, 10];
 const barColors = "#00aba9";
 
 new Chart("myChart7", {
