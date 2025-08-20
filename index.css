@@ -201,64 +201,69 @@
 
 /* ================================== Footer Complete ======================================== */
 * {
-  box-sizing: border-box;
-	
+	box-sizing: border-box;
 }
 /* Create three unequal columns that floats next to each other */
 .column {
 	overflow: hidden;
-  float: left;
-  padding: 10px;
+	float: left;
+	padding: 10px;
 	background-color: beige;
-	height: 250px;
+	height: 300px;
 	font-family: "Piala Regular";
 }
-.left{
-	width: 25%;
-	padding-left: 10px;
+.first{
+	width: 20%;
 } 
-.left img{
-	padding-top: 20px;
+.first img {
+	width: 100%;
 }
-
-.middle {
-  width: 35%;
+.second {
+ 	width: 30%;
+	text-align: justify;
 }
-.right {
-  width: 40%;
+.third {
+  width: 20%;
 }
-.right .fa {
-
-  font-size: 20px;
-
+.third .fa {
+ font-size: 20px;
   text-align: left;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
 }
-.right .fa:hover {
+.third .fa:hover {
     opacity: 0.7;
 }
-.right a{
+.third a{
 	width: 100%;
 }
+.fourth{
+	width: 30%;
+}
+.fourth p {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.fourth img{
+	width: 80%;
+	align-content: center;
+}
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .left, .right, .middle {
+@media only screen and (max-width: 800px) {
+  .first, .second, .third, .fourth {
 	  width: 100%;
-	  height: auto;
 	}
 }
 
-.footer{
-	margin-top: 50px;
+.footer {
+	padding: 20px;
 	text-align: center;
+	vertical-align: middle;
 	font-family: Bahnschrift;
 	background-color: black;
 	color: white;
-}
-.footer p{
-	position: relative;
 }
 
 /*--------------------------------------- SlideShow -----------------------------------*/
