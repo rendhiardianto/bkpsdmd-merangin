@@ -199,6 +199,7 @@
 }
 .chart-rekap canvas{
 	padding-bottom: 50px;
+	height: auto;
 }
 
 /* ================================== Footer Complete ======================================== */
