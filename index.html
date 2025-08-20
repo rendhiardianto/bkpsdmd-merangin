@@ -133,7 +133,8 @@
 </div>
 	
 <div class="asn-rekap">
-	<h2>STATISTIK BKPSDMD</h2>
+	<h2>STATISTIK</h2>
+	<!--style="font-size:2vw;"-->
 	<h3>Rekapitulasi ASN Kabupaten Merangin (per Desember 2024)</h3>
 		<div class="chart-rekap">
 		<canvas class="flex-item-half1" id="myChart1" style="max-width:300px"></canvas>	
@@ -179,9 +180,19 @@
 		<h3>Kunjungan Website</h3>
 		<p>Hari Ini</p>
 		<p>Total</p>
+	  	<h3 id="visitor-count">Loading...</h3>
 	  <img src="icon/BerAkhlak.png"/>
+	  
   </div>
 </div>
+
+<script>
+  fetch("counter.php")
+    .then(res => res.text())
+    .then(count => {
+      document.getElementById("visitor-count").innerText = count;
+    });
+</script>
 	
 <!--<div class="footer">
 	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>

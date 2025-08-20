@@ -199,7 +199,6 @@
 }
 .chart-rekap canvas{
 	padding-bottom: 50px;
-	height: auto;
 }
 
 /* ================================== Footer Complete ======================================== */
@@ -250,6 +249,7 @@ color: white;
 .fourth{
 	width: 30%;
 	background-color: #01B3BA;
+	padding-bottom: 20px;
 }
 .fourth p {
 	text-align: center;
@@ -259,7 +259,6 @@ color: white;
 .fourth img{
 	margin-left: 10%;
 	width: 80%;
-	object-position: center;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 800px) {
