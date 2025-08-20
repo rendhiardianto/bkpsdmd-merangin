@@ -208,7 +208,7 @@
 	overflow: hidden;
 	float: left;
 	padding: 10px;
-	background-color: #0148A5;
+	background-color: #019FA5;
 	color: white;
 	height: 300px;
 	font-family: Bahnschrift;
@@ -222,9 +222,11 @@
 .second {
  	width: 30%;
 	text-align: justify;
+	background-color: #01B3BA;
 }
 .third {
   width: 20%;
+	background-color: #019FA5;
 }
 .third .fa {
  font-size: 20px;
@@ -244,6 +246,7 @@ color: white;
 }
 .fourth{
 	width: 30%;
+	background-color: #01B3BA;
 }
 .fourth p {
 	text-align: center;
@@ -251,9 +254,9 @@ color: white;
 	padding-bottom: 20px;
 }
 .fourth img{
-	padding-top: 5px;
+	margin-left: 10%;
 	width: 80%;
-	align-content: center;
+	object-position: center;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 800px) {
@@ -261,9 +264,13 @@ color: white;
 	  width: 100%;
 	  height: auto;
 	}
-	.first img, .fourth img {
+	.first img{
 		width: 70%;
 		margin-left: 10%;
+	} .fourth img 
+	{
+		width: 70%;
+		margin-left: 15%;
 	}
 }
 
