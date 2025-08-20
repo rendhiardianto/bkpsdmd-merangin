@@ -255,6 +255,10 @@
   .first, .second, .third, .fourth {
 	  width: 100%;
 	}
+	.first img, .fourth img {
+		width: 70%;
+		margin-left: 10%;
+	}
 }
 
 .footer {
