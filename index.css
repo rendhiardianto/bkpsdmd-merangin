@@ -181,7 +181,7 @@
 	  width: 60%;
 	}
 }
-
+/* =================================== CHART =========================================*/
 .asn-rekap {
 	position: static;
 	overflow: hidden;
@@ -192,11 +192,14 @@
 .chart-rekap {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 	justify-content: center;
+	height: 100%;
 }
 .chart-rekap canvas{
 	padding-bottom: 50px;
+	height: 100%;
 }
 
 /* ================================== Footer Complete ======================================== */
