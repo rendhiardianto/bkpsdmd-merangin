@@ -208,10 +208,10 @@
 	overflow: hidden;
 	float: left;
 	padding: 10px;
-	background-color: beige;
-	color: black;
+	background-color: #0148A5;
+	color: white;
 	height: 300px;
-	font-family: "Piala Regular";
+	font-family: Bahnschrift;
 }
 .first{
 	width: 20%;
@@ -232,12 +232,15 @@
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+color: white;
+	
 }
 .third .fa:hover {
     opacity: 0.7;
 }
 .third a{
 	width: 100%;
+	
 }
 .fourth{
 	width: 30%;
@@ -248,6 +251,7 @@
 	padding-bottom: 20px;
 }
 .fourth img{
+	padding-top: 5px;
 	width: 80%;
 	align-content: center;
 }
@@ -255,6 +259,7 @@
 @media only screen and (max-width: 800px) {
   .first, .second, .third, .fourth {
 	  width: 100%;
+	  height: auto;
 	}
 	.first img, .fourth img {
 		width: 70%;
