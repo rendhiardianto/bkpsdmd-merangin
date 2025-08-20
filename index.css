@@ -61,7 +61,6 @@
 
 .dropdown {
   float: left;
-
 }
 
 .dropdown .dropbtn {
@@ -200,6 +199,7 @@
 	padding-bottom: 50px;
 }
 
+/* ================================== Footer Complete ======================================== */
 * {
   box-sizing: border-box;
 	
@@ -210,17 +210,37 @@
   float: left;
   padding: 10px;
 	background-color: beige;
-	height: 330px;
+	height: 250px;
 	font-family: "Piala Regular";
 }
 .left{
 	width: 25%;
+	padding-left: 10px;
 } 
+.left img{
+	padding-top: 20px;
+}
+
+.middle {
+  width: 35%;
+}
 .right {
   width: 40%;
 }
-.middle {
-  width: 35%;
+.right .fa {
+
+  font-size: 20px;
+
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.right .fa:hover {
+    opacity: 0.7;
+}
+.right a{
+	width: 100%;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
@@ -231,11 +251,14 @@
 }
 
 .footer{
+	margin-top: 50px;
 	text-align: center;
 	font-family: Bahnschrift;
 	background-color: black;
 	color: white;
-	padding: 15px;
+}
+.footer p{
+	position: relative;
 }
 
 /*--------------------------------------- SlideShow -----------------------------------*/
