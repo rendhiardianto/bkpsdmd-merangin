@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Excel Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    .chart-controls {
+      margin-bottom: 20px;
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+    }
+    select {
+      padding: 6px 12px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sales Data Chart</h2>
+
+  <!-- Dropdown to change chart type -->
+  <div class="chart-controls">
+    <label for="chartType">Choose Chart Type: </label>
+    <select id="chartType">
+      <option value="bar">Bar</option>
+      <option value="line">Line</option>
+      <option value="pie">Pie</option>
+      <option value="doughnut">Doughnut</option>
+    </select>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script>
+    let chart; // Global chart instance
+
+    // Load CSV data
+    async function loadCSV() {
+      const response = await fetch("data.csv"); // Your Excel-exported CSV
+      const text = await response.text();
+      const rows = text.trim().split("\n").slice(1); // Skip header
+
+      const labels = [];
+      const values = [];
+
+      rows.forEach(row => {
+        const cols = row.split(",");
+        if (cols.length === 2) {
+          labels.push(cols[0]);
+          values.push(parseFloat(cols[1]));
+        }
+      });
+
+      return { labels, values };
+    }
+
+    // Render chart
+    async function renderChart(chartType = "bar") {
+      const { labels, values } = await loadCSV();
+
+      const ctx = document.getElementById("myChart").getContext("2d");
+
+      if (chart) {
+        chart.destroy(); // Remove old chart before creating a new one
+      }
+
+      chart = new Chart(ctx, {
+        type: chartType,
+        data: {
+          labels: labels,
+          datasets: [{
+            label: "Sales",
+            data: values,
+            backgroundColor: [
+              "rgba(75, 192, 192, 0.6)",
+              "rgba(255, 99, 132, 0.6)",
+              "rgba(255, 206, 86, 0.6)",
+              "rgba(54, 162, 235, 0.6)",
+              "rgba(153, 102, 255, 0.6)"
+            ],
+            borderColor: [
+              "rgba(75, 192, 192, 1)",
+              "rgba(255, 99, 132, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(153, 102, 255, 1)"
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "top"
+            }
+          },
+          scales: chartType === "pie" || chartType === "doughnut" ? {} : {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    // Event listener for dropdown
+    document.getElementById("chartType").addEventListener("change", (e) => {
+      renderChart(e.target.value);
+    });
+
+    // Load default chart
+    renderChart();
+  </script>
+</body>
+</html>
