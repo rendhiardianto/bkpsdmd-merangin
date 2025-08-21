@@ -5,11 +5,11 @@
    src: url("file/Trebuchet.ttf");
 }
 @font-face {
-   font-family: SecondFont;
+   font-family:Bahnschrift;
    src: url("file/Bahnschrift.ttf");
 }
 @font-face {
-   font-family: ThirdFont;
+   font-family: BebasNeue;
    src: url("file/BebasNeue.otf");
 }
 @font-face {
@@ -18,7 +18,7 @@
 }
 /*===============================================================================*/
 * {
-   font-family: FirstFont;
+
 }
 .body {
   margin: 0px;
@@ -170,6 +170,7 @@
 	padding-bottom: 0px;
 	overflow: hidden;
 	text-align: center;
+	font-family: FirstFont;
 }
 .pidato-kaban p {
 	font-size: 20px;
