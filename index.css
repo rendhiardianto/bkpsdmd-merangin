@@ -24,6 +24,10 @@
    font-family: FreeHand;
    src: url("file/Font/FreeHand.ttf");
 }
+@font-face {
+   font-family: SegoeUI;
+   src: url("file/Font/segoeui.ttf");
+}
 /*===============================================================================*/
 
 .body {
@@ -192,7 +196,7 @@
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: left;
-	font-family:"Segoe UI";
+	font-family: SegoeUI;
 }
 .pidato-kaban img {
 	float: right;
