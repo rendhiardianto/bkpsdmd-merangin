@@ -1,25 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-   font-family: FirstFont;
-   src: url("file/Trebuchet.ttf");
+   font-family: Trebuchet;
+   src: url("file/Font/Trebuchet.ttf");
 }
 @font-face {
    font-family:Bahnschrift;
-   src: url("file/Bahnschrift.ttf");
+   src: url("file/Font/Bahnschrift.ttf");
 }
 @font-face {
    font-family: BebasNeue;
-   src: url("file/BebasNeue.otf");
+   src: url("file/Font/BebasNeue.otf");
 }
 @font-face {
-   font-family: FourthFont;
-   src: url("file/.otf");
+   font-family: Raleway-Light;
+   src: url("file/Font/Raleway-Light.ttf");
+}
+@font-face {
+   font-family: Raleway-Medium;
+   src: url("file/Font/Raleway-Medium.ttf");
+}
+@font-face {
+   font-family: FreeHand;
+   src: url("file/Font/FreeHand.ttf");
 }
 /*===============================================================================*/
-* {
 
-}
 .body {
   margin: 0px;
 }
@@ -32,6 +38,7 @@
   background-color: #00B6F8;
   height: 65px;
   box-shadow: 0px 2px 10px 0px black;
+	font-family: Trebuchet;
 }
 .navLogo{
 	float: left;
@@ -167,16 +174,25 @@
 /* ============================================ SAMBUTAN KABAN ==============================*/
 .pidato-kaban {
 	background-color: beige;
-	padding-bottom: 0px;
+	padding-bottom: 40px;
+	padding-top: 40px;
 	overflow: hidden;
 	text-align: center;
-	font-family: FirstFont;
+}
+.pidato-kaban h2{
+	font-family: FreeHand;
+	font-size: 40px;
+}
+.pidato-kaban nd{
+	font-family: Bahnschrift;
+	font-size: 20px;
 }
 .pidato-kaban p {
 	font-size: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: left;
+	font-family:"Segoe UI";
 }
 .pidato-kaban img {
 	float: right;
@@ -194,10 +210,13 @@
 }
 /* =================================== CHART =========================================*/
 .asn-rekap {
+	margin-top: 50px;
+	margin-bottom: 50px; 
 	position: static;
 	overflow: hidden;
 	background-color: white;
 	text-align: center;
+	font-family: Bahnschrift;
 }
 .chart-rekap {
 	display: flex;
@@ -213,7 +232,7 @@
 /* ================================== Footer Complete ======================================== */
 * {
 	box-sizing: border-box;
-	font-family: SecondFont;
+	
 }
 /* Create three unequal columns that floats next to each other */
 .column {
@@ -222,10 +241,12 @@
 	padding: 10px;
 	background-color: #019FA5;
 	color: white;
-	height: 300px;
+	height: 260px;
+	font-family: Raleway-Medium;
 }
 .first{
 	width: 20%;
+	
 } 
 .first img {
 	width: 100%;
@@ -254,6 +275,7 @@
 	width: 25%;
 	background-color: #01B3BA;
 	padding-bottom: 20px;
+	padding-top: 5px;
 }
 .fourth p {
 	text-align: center;
@@ -278,15 +300,6 @@
 		width: 70%;
 		margin-left: 15%;
 	}
-}
-
-.footer {
-	padding: 20px;
-	text-align: center;
-	vertical-align: middle;
-	font-family: Bahnschrift;
-	background-color: black;
-	color: white;
 }
 
 /*--------------------------------------- SlideShow -----------------------------------*/
