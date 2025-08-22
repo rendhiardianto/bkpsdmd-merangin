@@ -95,7 +95,16 @@
 </div>
 	
 <!------------------- CONTENT ----------------------------------->
-
+<div class="infoGrafis">
+	<h2>INFO GRAFIS</h2>
+	<img class="mySlides" src="images/index_pict/1.jpg">
+	<img class="mySlides" src="images/index_pict/2.jpg">
+	<img class="mySlides" src="images/index_pict/3.jpg">
+	<img class="mySlides" src="images/index_pict/4.jpg">
+	<img class="mySlides" src="images/index_pict/5.jpg">
+</div>
+	
+<!--	
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -127,7 +136,7 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
+-->
 <div class="pidato-kaban">
 	<h2> Sekapur Sirih<br><p>Kepala BKPSDMD Kabupaten Merangin</p></h2>
 	<img src="images/Foto_Kaban.png" alt="Foto Kaban">
@@ -234,6 +243,7 @@
 		<h3>Kunjungan Website</h3>
 		<p>Hari Ini</p>
 		<p>Total</p>
+	  
 	  	
 	  <img src="icon/BerAkhlak.png" alt="Logo BerAkhlak">
 	  
@@ -256,6 +266,20 @@
 	
 <script src="index.js"></script>
 <!--<script src="chart.js"></script>-->
-	
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);
+}
+</script>	
 </body>
 </html>
