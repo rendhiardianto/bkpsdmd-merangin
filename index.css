@@ -38,7 +38,7 @@ body {
 .topnav {
   position: sticky;
   top: 0;
-  background-color: #00B6F8;
+  background-color: #0099B8;
   height: 65px;
   box-shadow: 0px 2px 10px 0px black;
   font-family: Trebuchet;
@@ -56,8 +56,8 @@ body {
 .navRight {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-color: #00B6F8;
-
+	background-color: #0099B8;
+	box-shadow: 0px 2px 10px 0px black;
 }
 .navRight a {
   float: left;
