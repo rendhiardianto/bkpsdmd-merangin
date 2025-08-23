@@ -95,15 +95,20 @@ body {
 }
 
 .dropdown-content {
+  
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 5px 10px 0px black;
   z-index: 1;
- overflow: hidden;
+	overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
+#menu1
+{
+	transition-timing-function: ease;
+}
 .dropdown-content a {
   float: none;
   color: black;
@@ -193,7 +198,6 @@ body {
 	margin-top: 10px;
 	/*box-shadow: 0px 0px 10px 2px black;*/
 }
-
 /* ============================================ SAMBUTAN KABAN ==============================*/
 .pidato-kaban {
 	background-color: beige;
