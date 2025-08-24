@@ -176,22 +176,12 @@ body {
 
 /* ============================================ Visi Misi ==============================*/
 .visiMisi {
-	background-color: beige;
+	background-color: azure;
 	/*background-image: url(images//index_pict/1.jpg);
 	background-size: cover;*/
 	overflow: hidden;
 	text-align: justify;
-	padding: 10px;
-}
-.meranginBaru{
-	display: block;
-	margin: auto;
-	align-content: center;
-}
-.bupatiWabup {
-	display: block;
-	margin: auto;
-	align-content: center;
+	padding: 20px;
 }
 .visiMisi h1{
 	font-family: FreeHand;
@@ -204,6 +194,18 @@ body {
 	font-size: 20px;
 	text-align: center;
 	color: black;
+	line-height: 0.1;
+}
+.meranginBaru {
+	display: block;
+	margin: auto;
+	align-content: center;
+	top: 0;
+}
+.bupatiWabup {
+	display: block;
+	margin: auto;
+	align-content: center;
 }
 
 .visiMisi h2 {
@@ -213,14 +215,15 @@ body {
 	color: #189205;
 }
 .visiMisi h3 {
-	font-family: SegoeUI;
+	font-family: 'Trebuchet MS';
 	text-align: center;
 	font-size: 25px;
 }
 .visiMisi h3 p {
-	font-family: SegoeUI;
+	font-family: Bahnschrift;
 	text-align: center;
 	font-size: 20px;
+	line-height: 150%;
 }
 .visiMisi li {
 	font-size: 20px;
@@ -242,6 +245,12 @@ body {
 	  font-size: 15px;
 	  padding: 5px;
 	}
+	.visiMisi h3 {
+		font-size: 20px;
+	}
+	.visiMisi h3 p {
+		font-size: 15px;
+	}
 	.visiMisi li {
 	  font-size: 15px;
 	  padding: 5px;
@@ -257,12 +266,12 @@ body {
 	overflow: hidden;
 	text-align: center;
 }
-.selaPang h2{
+.selaPang h1{
 	font-family: FreeHand;
 	font-size: 50px;
 	color: #189205;
 }
-.selaPang h2 p{
+.selaPang h1 p{
 	font-family: Bahnschrift;
 	font-size: 20px;
 	text-align: center;
@@ -273,14 +282,18 @@ body {
 	font-size: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	text-align: left;
+	text-align: justify;
 	font-family: SegoeUI;
+	line-height: 150%;
 }
-.selaPang img {
+.selaPang img{
 	float: right;
-	margin-right: 0;
-	width: 300px;
+	overflow-y: 0px;
+	width: 20%;
+	padding: 10px;
+	margin-left: 10px;
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .selaPang p {
@@ -288,25 +301,25 @@ body {
 	  padding: 5px;
 	}
   .selaPang img{
-	  width: 60%;
+	  width: 50%;
 	}
 }
 
 /* ============================================ Sejarah ==============================*/
 .sejarah {
-	background-color: beige;
+	background-color: rgb(220, 248, 255);
 	/*background-image: url(images//index_pict/1.jpg);
 	background-size: cover;*/
 	padding-bottom: 40px;
 	overflow: hidden;
 	text-align: center;
 }
-.sejarah h2{
+.sejarah h1{
 	font-family: FreeHand;
 	font-size: 50px;
 	color: #189205;
 }
-.sejarah h2 p{
+.sejarah h1 p{
 	font-family: Bahnschrift;
 	font-size: 20px;
 	text-align: center;
@@ -317,15 +330,25 @@ body {
 	font-size: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	text-align: left;
+	text-align: justify;
 	font-family: SegoeUI;
+	line-height: 150%;
 }
-
+.sejarah img{
+	float: right;
+	overflow-y: 0px;
+	width: 30%;
+	padding: 10px;
+	margin-left: 10px;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .sejarah p {
 	  font-size: 15px;
 	  padding: 5px;
+	}
+	.sejarah img{
+	  width: 50%;
 	}
 }
 /* ============================================ STRUKTUR ORGANISASI ==============================*/
