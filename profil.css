@@ -230,12 +230,13 @@ body {
 	text-align: justify;
 	font-family: SegoeUI;
 	line-height: 200%;
+	padding-right: 10px;
 }
 .visiMisi p {
 	font-size: 20px;
 	font-family: SegoeUI;
 	text-align: justify;
-	padding-right: 5px;
+	padding-right: 10px;
 	line-height: 200%;
 }
 
@@ -292,16 +293,21 @@ body {
 	width: 20%;
 	padding: 10px;
 	margin-left: 10px;
+	margin-right: 20px;
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .selaPang p {
 	  font-size: 15px;
-	  padding: 5px;
+	  padding: 10px;
 	}
   .selaPang img{
 	  width: 50%;
+	  margin-right: 10px;
+	}
+	.selaPang h1{
+	font-size: 45px;
 	}
 }
 
@@ -340,51 +346,41 @@ body {
 	width: 30%;
 	padding: 10px;
 	margin-left: 10px;
+	margin-right: 20px;;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .sejarah p {
 	  font-size: 15px;
-	  padding: 5px;
+	  padding: 10px;
 	}
 	.sejarah img{
 	  width: 50%;
+	  margin-right: 10px;
 	}
 }
 /* ============================================ STRUKTUR ORGANISASI ==============================*/
 .strukOrga {
-	background-color: beige;
-	/*background-image: url(images//index_pict/1.jpg);
-	background-size: cover;*/
-	padding-bottom: 40px;
+	background-color: white;
 	overflow: hidden;
-	text-align: center;
 }
-.strukOrga h2{
+.strukOrga h1 {
 	font-family: FreeHand;
 	font-size: 50px;
 	color: #189205;
+	text-align: center;
 }
-.strukOrga h2 p{
+.strukOrga h1 p{
 	font-family: Bahnschrift;
 	font-size: 20px;
 	text-align: center;
 	color: black;
 	margin-top: 0px;
 }
-.strukOrga p {
-	font-size: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: left;
-	font-family: SegoeUI;
-}
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .strukOrga p {
-	  font-size: 15px;
-	  padding: 5px;
+  .strukOrga h1 {
+	  font-size: 40px;
 	}
 }
 
