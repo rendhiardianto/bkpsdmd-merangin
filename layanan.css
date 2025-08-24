@@ -185,7 +185,7 @@ body {
 }
 .layananBKN h1{
 	font-family: Bahnschrift;
-	text-align: left;
+	text-align: center;
 	font-size: 40px;
 	color: #0077b6;
 }
@@ -195,182 +195,55 @@ body {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .visiMisi p {
-	  font-size: 15px;
-	  padding: 5px;
+	.layananBKN h1{
+		font-family: Bahnschrift;
+		text-align: left;
+		font-size: 30px;
+		color: #0077b6;
 	}
-	.visiMisi h3 {
-		font-size: 20px;
-	}
-	.visiMisi h3 p {
-		font-size: 15px;
-	}
-	.visiMisi li {
-	  font-size: 15px;
-	  padding: 5px;
+	.LogoBKN {
+		width: 200px;
 	}
 }
 
-/* ============================================ Selayang Pandang ==============================*/
-.selaPang {
-	background-color: beige;
-	/*background-image: url(images//index_pict/1.jpg);
-	background-size: cover;*/
-	padding-bottom: 40px;
-	overflow: hidden;
-	text-align: center;
-}
-.selaPang h1{
-	font-family: FreeHand;
-	font-size: 50px;
-	color: #0077b6;
-}
-.selaPang h1 p{
-	font-family: Bahnschrift;
-	font-size: 20px;
-	text-align: center;
-	color: #0077b6
-	margin-top: 0px;
-}
-.selaPang p {
-	font-size: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	font-family: SegoeUI;
-	line-height: 150%;
-}
-.selaPang img{
-	float: right;
-	overflow-y: 0px;
-	width: 20%;
-	padding: 10px;
-	margin-left: 10px;
-	margin-right: 20px;
+/* ============================================ FLEX CONTAINER ==============================*/
+* {
+  box-sizing: border-box;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .selaPang p {
-	  font-size: 15px;
-	  padding: 10px;
-	}
-  .selaPang img{
-	  width: 50%;
-	  margin-right: 10px;
-	}
-	.selaPang h1{
-	font-size: 45px;
-	}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.flex-container > div {
+ margin: 0;
+ background-color: #f1f1f1;
+ line-height: 30px;
+ font-family: trebuchet;
+ font-size: 20px;
+ margin: 10px;
+}
+.flex-item-one {
+  flex: 20%;
 }
 
-/* ============================================ Sejarah ==============================*/
-.sejarah {
-	background-color: rgb(220, 248, 255);
-	/*background-image: url(images//index_pict/1.jpg);
-	background-size: cover;*/
-	padding-bottom: 40px;
-	overflow: hidden;
-	text-align: center;
+.flex-item-two {
+  flex: 20%;
 }
-.sejarah h1{
-	font-family: FreeHand;
-	font-size: 50px;
-	color: #0077b6;
+.flex-item-three {
+  flex: 20%;
 }
-.sejarah h1 p{
-	font-family: Bahnschrift;
-	font-size: 20px;
-	text-align: center;
-	color: #0077b6;
-	margin-top: 0px;
-}
-.sejarah p {
-	font-size: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	font-family: SegoeUI;
-	line-height: 150%;
-}
-.sejarah img{
-	float: right;
-	overflow-y: 0px;
-	width: 30%;
-	padding: 10px;
-	margin-left: 10px;
-	margin-right: 20px;;
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .sejarah p {
-	  font-size: 15px;
-	  padding: 10px;
-	}
-	.sejarah img{
-	  width: 50%;
-	  margin-right: 10px;
-	}
-}
-/* ============================================ STRUKTUR ORGANISASI ==============================*/
-.strukOrga {
-	background-color: white;
-	overflow: hidden;
-}
-.strukOrga h1 {
-	font-family: FreeHand;
-	font-size: 50px;
-	color: #0077b6;
-	text-align: center;
-}
-.strukOrga h1 p{
-	font-family: Bahnschrift;
-	font-size: 20px;
-	text-align: center;
-	color: #0077b6;
-	margin-top: 0px;
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .strukOrga h1 {
-	  font-size: 40px;
-	}
-}
-/* ============================================ TUPOKSI ==============================*/
-.tuPoksi {
-	background-color: beige;
-	/*background-image: url(images//index_pict/1.jpg);
-	background-size: cover;*/
-	padding-bottom: 40px;
-	overflow: hidden;
-	text-align: center;
-}
-.tuPoksi h2{
-	font-family: FreeHand;
-	font-size: 50px;
-	color: #0077b6;
-}
-.tuPoksi h2 p{
-	font-family: Bahnschrift;
-	font-size: 20px;
-	text-align: center;
-	color: #0077b6;
-	margin-top: 0px;
-}
-.tuPoksi p {
-	font-size: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: left;
-	font-family: SegoeUI;
+.flex-item-four {
+  flex: 20%;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .tuPoksi p {
-	  font-size: 15px;
-	  padding: 5px;
-	}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+  .flex-item-one, .flex-item-two, .flex-item-three, .flex-item-four {
+    flex: 40%;
+  }
 }
 
 
