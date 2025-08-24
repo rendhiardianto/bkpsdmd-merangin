@@ -188,6 +188,7 @@ body {
 	margin-top: 30px;
 	text-align: center;
 	font-family: Bahnschrift;
+	color: #0077b6;
 }
 .infoGrafis img {
 	width: 95%;
@@ -210,13 +211,13 @@ body {
 .pidato-kaban h2{
 	font-family: FreeHand;
 	font-size: 50px;
-	color: #189205;
+	color: #0077b6;
 }
 .pidato-kaban h2 p{
 	font-family: Bahnschrift;
 	font-size: 20px;
 	text-align: center;
-	color: black;
+	color: #0077b6;
 	margin-top: 0px;
 }
 .pidato-kaban p {
@@ -253,6 +254,10 @@ body {
 }
 .asn-rekap h2 {
 	margin-bottom: -20px;
+	color: #0077b6;
+}
+.asn-rekap h3 {
+	color: #0077b6;
 }
 .chart-rekap {
 	display: flex;
