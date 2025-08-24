@@ -274,7 +274,7 @@ body {
 	overflow: hidden;
 	float: left;
 	padding: 10px;
-	background-color: #0096c7;
+	background-color: #0077b6;
 	color: white;
 	height: 260px;
 	font-family: Raleway-Medium;
@@ -290,7 +290,7 @@ body {
 .second {
  	width: 35%;
 	text-align: left;
-	background-color: #00b4d8;
+	background-color: #0096c7;
 }
 .second img{
 	width: 40px;
@@ -299,7 +299,7 @@ body {
 
 .third {
   width: 20%;
-  background-color: #0096c7;
+  background-color: #00b4d8;
 }
 .third img {
 	width: 40px;
@@ -309,7 +309,7 @@ body {
 
 .fourth{
 	width: 22.5%;
-	background-color: #00b4d8;
+	background-color: #48cae4;
 	padding-bottom: 20px;
 	padding-top: 10px;
 }
