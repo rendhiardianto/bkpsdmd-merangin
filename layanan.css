@@ -118,6 +118,7 @@ body {
 .navRight a:hover, .dropdown:hover .dropbtn {
   background-color: white;
   color: black;
+  transition: 0.5s;
 }
 
 .dropdown:hover .dropdown-content{}
@@ -174,66 +175,9 @@ body {
   }
 }
 
-/*==================================== OVERLAY MENU ================================*/
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 10%;
-  left: 15%;
-  width: 70%;
-}
-.overlay-content img {
-	width: 100%;
-	height: auto;
-	
-	border-radius: 10px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 600px) {
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 0px;
-  right: 0px;
-  }
-}
-
 /* ============================================ Layanan BKD ==============================*/
 .layananBKD {
 	background-color: white;
-	/*background-image: url(images//index_pict/1.jpg);
-	background-size: cover;*/
 	overflow: hidden;
 	text-align: center;
 	padding: 20px;
@@ -245,13 +189,12 @@ body {
 	color: #0077b6;
 	margin-top: 0px;
 }
-.layananBKD .layananKPG{
+.layananBKD .layananKPG {
 	margin-top: 20px;
 }
-.layananBKD .layananPSDM{
+.layananBKD .layananPSDM {
 	margin-top: 50px;
 }
-
 .LogoBKD {
 	width: 200px;
 }
@@ -316,7 +259,7 @@ body {
  margin: 0;
  background-color: #dddddd;
  color: #023e8a;
- line-height: 30px;
+ line-height: 20px;
  font-family: trebuchet;
  font-size: 20px;
  margin: 10px;
@@ -328,6 +271,9 @@ body {
 	box-shadow: 0px 5px 15px grey;
 	cursor: pointer;
 	transition: 0.3s;
+}
+.flex-item-main {
+  flex: 20%;
 }
 .flex-item-one {
   flex: 20%;
@@ -342,7 +288,7 @@ body {
   flex: 20%;
 }
 
-.flex-item-one sub, .flex-item-two sub, .flex-item-three sub, .flex-item-four sub {
+.flex-item-main sub, .flex-item-one sub, .flex-item-two sub, .flex-item-three sub, .flex-item-four sub {
 	color: rgb(41, 40, 40);
 	line-height: 0.1;
 	font-size: 15px;
@@ -350,7 +296,7 @@ body {
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 600px) {
-  .flex-item-one, .flex-item-two, .flex-item-three, .flex-item-four {
+  .flex-item-main, .flex-item-one, .flex-item-two, .flex-item-three, .flex-item-four {
     flex: 40%;
   }
 }
