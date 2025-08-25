@@ -275,6 +275,13 @@ body {
 .flex-item-main {
   flex: 20%;
 }
+.flex-item-main img {
+	filter: opacity(0.9);
+}
+.flex-item-main img:hover {
+	filter: invert(50%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+	transition: 0.3s;
+}
 .flex-item-one {
   flex: 20%;
 }
@@ -300,7 +307,11 @@ body {
     flex: 40%;
   }
 }
-
+@media (max-width: 800px) {
+  .flex-item-main, .flex-item-one, .flex-item-two, .flex-item-three, .flex-item-four {
+    flex: 30%;
+  }
+}
 
 /* ================================== Footer Complete ======================================== */
 * {
