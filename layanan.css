@@ -56,7 +56,7 @@ body {
 .navRight {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-color: #0099B8;
+	background-color: #0077b6;
 	box-shadow: 0px 2px 10px 0px black;
 }
 .navRight a {
@@ -176,11 +176,11 @@ body {
 
 /* ============================================ Layanan BKN ==============================*/
 .layananBKN {
-	background-color: azure;
+	background-color: white;
 	/*background-image: url(images//index_pict/1.jpg);
 	background-size: cover;*/
 	overflow: hidden;
-	text-align: justify;
+	text-align: center;
 	padding: 20px;
 }
 .layananBKN h1{
@@ -197,12 +197,12 @@ body {
 @media only screen and (max-width: 600px) {
 	.layananBKN h1{
 		font-family: Bahnschrift;
-		text-align: left;
+		text-align: center;
 		font-size: 30px;
 		color: #0077b6;
 	}
 	.LogoBKN {
-		width: 200px;
+		width: 150px;
 	}
 }
 
@@ -219,26 +219,40 @@ body {
 }
 .flex-container > div {
  margin: 0;
- background-color: #f1f1f1;
+ background-color: #dddddd;
+ color: #023e8a;
  line-height: 30px;
  font-family: trebuchet;
  font-size: 20px;
  margin: 10px;
+ border-radius: 12px;
+ box-shadow: 0px 5px 5px grey;
+}
+.flex-container > div:hover {
+	background-color:  white;
+	box-shadow: 0px 5px 15px grey;
+	cursor: pointer;
+	transition: 0.3s;
 }
 .flex-item-one {
-  flex: 20%;
+  flex: 10%;
 }
-
 .flex-item-two {
-  flex: 20%;
+  flex: 10%;
 }
 .flex-item-three {
-  flex: 20%;
+  flex: 10%;
 }
 .flex-item-four {
-  flex: 20%;
+  flex: 10%;
 }
 
+.flex-item-one sub, .flex-item-two sub, .flex-item-three sub, .flex-item-four sub {
+	color: rgb(41, 40, 40);
+	line-height: 0.1;
+	font-size: 15px;
+	padding: 5px;
+}
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 600px) {
   .flex-item-one, .flex-item-two, .flex-item-three, .flex-item-four {
