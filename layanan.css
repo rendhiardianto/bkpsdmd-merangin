@@ -276,7 +276,7 @@ body {
   flex: 20%;
 }
 .flex-item-main img {
-	filter: opacity(0.5);
+	filter: opacity(0.7);
 }
 .flex-item-main img:hover {
 	filter: invert(50%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
