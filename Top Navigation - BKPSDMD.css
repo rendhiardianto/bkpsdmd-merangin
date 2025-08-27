@@ -1,0 +1,116 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+.navLogo{
+	float: left;
+}
+.navLogo #bkpsdmdLogo {
+	height: 40px;
+	padding-left: 10px;
+}
+    nav {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #34495e;
+    }
+
+    /* Dropdown menu with animation */
+    .dropdown {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #34495e;
+      min-width: 160px;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+    .dropdown a {
+      padding: 10px;
+    }
+
+    /* Show dropdown on hover (desktop) */
+    .nav-links li:hover .dropdown {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #2c3e50;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .dropdown {
+        position: static;
+      }
+
+      .nav-links li:hover .dropdown {
+        max-height: 0;
+        opacity: 0;
+      }
+
+      .nav-links li.open .dropdown {
+        max-height: 500px;
+        opacity: 1;
+      }
+    }
