@@ -1,52 +1,46 @@
-// Image Slider Script
-  let slideIndex = 1;
-  let slideTimer;
+//RESPONSIVE TOP NAV----------------------------------------------
+function myFunction() {
+  var x = document.getElementById("mynavBtn");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
-  function showSlides(n) {
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
-    let thumbs = document.querySelectorAll(".thumbnail-row img");
+//DROPDOWN BUTTONS----------------------------------------------
+    function toggleDropdown(menuId) {
+      // Close all other dropdowns
+      document.querySelectorAll(".dropdown-content").forEach(menu => {
+        if (menu.id !== menuId) {
+          menu.classList.remove("show");
+        }
+      });
 
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      // Toggle the clicked one
+      document.getElementById(menuId).classList.toggle("show");
     }
 
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    // Close dropdown if clicking outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        document.querySelectorAll(".dropdown-content").forEach(menu => {
+          menu.classList.remove("show");
+        });
+      }
     }
 
-    thumbs.forEach(img => img.classList.remove("active-thumb"));
-
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    thumbs[slideIndex-1].classList.add("active-thumb");
-  }
-
-  function plusSlides(n) {
-    clearInterval(slideTimer);
-    slideIndex += n;
-    showSlides(slideIndex);
-    autoSlide();
-  }
-
-  function currentSlide(n) {
-    clearInterval(slideTimer);
-    slideIndex = n;
-    showSlides(slideIndex);
-    autoSlide();
-  }
-
-  function autoSlide() {
-    slideTimer = setInterval(() => {
-      slideIndex++;
-      if (slideIndex > document.getElementsByClassName("slides").length) { slideIndex = 1 }
-      showSlides(slideIndex);
-    }, 4000); // 4 seconds
-  }
-
-  // Initialize
-  showSlides(slideIndex);
-  autoSlide();
+    // INFOGRAPHIS SLIDESHOW----------------------------------------------
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);
+}

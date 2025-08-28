@@ -33,7 +33,7 @@ body {
 	margin: 0;
 }
 
-/*======================================== INFO GRAFIS ========================================
+/*================ INFO GRAFIS ==========================
 .infoGrafis {
 	background-color: #FFF4F4;
 	padding-top: 10px;
@@ -52,6 +52,106 @@ body {
 {
 	margin-top: 10px;
 }*/
+
+    .slideshow-container {
+	  padding-top: 50px;
+	  margin: auto;
+      position: relative;
+	  justify-content: center;
+      max-width: 1000px;
+	  width: 90%;
+	  overflow: hidden;
+    }
+
+    .slides {
+      display: none;
+      
+      position: relative;
+    }
+
+    .slides img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Caption text */
+    .caption {
+      color: #f2f2f2;
+      font-size: 18px;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+    }
+
+    /* Next & prev buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.3s;
+      background: rgba(0,0,0,0.5);
+      user-select: none;
+    }
+
+    .next { right: 10px; }
+    .prev { left: 10px; }
+
+    .prev:hover, .next:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    /* Dots */
+    .dots {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 3px;
+      background: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .active, .dot:hover {
+      background: #717171;
+    }
+
+    /* Thumbnail images */
+    .thumbnail-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .thumbnail-row img {
+      width: 120px;
+      height: 70px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    .thumbnail-row img:hover, .thumbnail-row img.active-thumb {
+      opacity: 1;
+    }
+
 /* ============================================ SAMBUTAN KABAN ==============================*/
 .pidato-kaban {
 	background-color: beige;
@@ -117,7 +217,9 @@ body {
 	flex-wrap: wrap;
 	margin-top: 50px;
 	margin-bottom: 20px;
-	justify-content: center;
+}
+.chart-rekap .chart {
+	padding: 20px;
 }
 .chart-rekap canvas{
 	padding-bottom: 50px;
