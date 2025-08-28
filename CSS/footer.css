@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+}
+.column {
+	overflow: hidden;
+	float: left;
+	padding: 10px;
+	background-color: #0096c7;
+	color: white;
+	height: 260px;
+	font-family: Raleway-Medium;
+	font-size: 15px;
+}
+.first{
+	width: 22.5%;
+} 
+.first img {
+	width: 100%;
+}
+
+.second {
+ 	width: 35%;
+	text-align: left;
+	background-color: #00b4d8;
+}
+.second img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+.third {
+  width: 20%;
+  background-color: #0096c7;
+}
+.third img {
+	width: 40px;
+	margin-left: 5px;
+	padding-bottom: 20px;
+}
+
+.fourth{
+	width: 22.5%;
+	background-color: #00b4d8;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.fourth p {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.fourth img{
+	margin-left: 10%;
+	width: 80%;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .first, .second, .third, .fourth {
+	  width: 100%;
+	  height: auto;
+	}
+	.first img{
+		width: 70%;
+		margin-left: 10%;
+	} .fourth img 
+	{
+		width: 70%;
+		margin-left: 15%;
+	}
+}

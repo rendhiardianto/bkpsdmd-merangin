@@ -13,7 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<link href="/CSS/topnav.css" rel="stylesheet" type="text/css">
+<link href="/CSS/footer.css" rel="stylesheet" type="text/css">
 <link href="index.css" rel="stylesheet" type="text/css">
+<link href="slideShow.css" rel="stylesheet" type="text/css">
+
 
 <title>BKPSDMD Kabupaten Merangin</title>
 <link rel="shortcut icon" href="icon/IconWeb.png">
@@ -21,13 +25,8 @@
 
 <body>
 <div class="header">
-	<video src="/videos/HeaderVideo.mp4" width="100%" autoplay muted loop id="myVideo"></video>
-	<!--<img src="images/HomeHeaderSS.jpg" width="100%" alt="Banner Home">
-  <p><img src="icon/MeranginLogo.png" height="100"/></p>
-  <img src="icon/BKPLogo.png" height="50"/>
-  <h1>SELAMAT DATANG</h1>
-	<h2>DI PORTAL RESMI </h2>
-	<h2>BKPSDMD KABUPATEN MERANGIN</h2>-->
+	<video src="/videos/HeaderVideo2.mp4" width="100%" autoplay muted loop id="myVideo"></video>
+	<!--<img src="images/HomeHeaderSS.jpg" width="100%" alt="Banner Home">-->
 </div>
 	
 <div class="topnav" id="mynavBtn">
@@ -39,7 +38,7 @@
 	<div class="navRight" >
 		
 		<div class="dropdown">
-			<button onclick="toggleDropdown('menu1')" class="dropbtn">PROFIL <i class="fa fa-caret-down"></i></button>
+			<button onclick="toggleDropdown('menu1')" class="dropbtn"><chose>PROFIL</chose> <i class="fa fa-caret-down"></i></button>
 		  <div id="menu1" class="dropdown-content">
 			<a href="profil.html#visiMisi">Visi dan Misi</a>
 			<a href="profil.html#selaPang">Selayang Pandang</a>
@@ -94,7 +93,51 @@
 </div>
 	
 <!------------------- CONTENT ----------------------------------->
+<h2 style="text-align:center">INFO GRAFIS</h2>
 
+<div class="slideshow-container">
+
+  <div class="slides">
+    <img src="images/InfoGrafis/1.jpg" alt="Nature 1">
+    <div class="caption">Beautiful Mountain View</div>
+  </div>
+
+  <div class="slides">
+    <img src="images/InfoGrafis/2.jpg" alt="Nature 2">
+    <div class="caption">Peaceful Beach</div>
+  </div>
+
+  <div class="slides">
+    <img src="images/InfoGrafis/3.jpg" alt="Nature 3">
+    <div class="caption">Misty Forest</div>
+  </div>
+
+  <div class="slides">
+    <img src="images/InfoGrafis/4.jpg" alt="Nature 4">
+    <div class="caption">Golden Sunset</div>
+  </div>
+
+  <!-- Navigation arrows -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots -->
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!-- Thumbnail navigation -->
+<div class="thumbnail-row">
+  <img src="images/InfoGrafis/1.jpg" onclick="currentSlide(1)">
+  <img src="images/InfoGrafis/2.jpg" onclick="currentSlide(2)">
+  <img src="images/InfoGrafis/3.jpg" onclick="currentSlide(3)">
+  <img src="images/InfoGrafis/4.jpg" onclick="currentSlide(4)">
+</div>
+<!--
 <div class="infoGrafis">
 	<h2>INFO GRAFIS</h2>
 	<img class="mySlides" src="images/InfoGrafis/1.jpg">
@@ -107,7 +150,7 @@
 	<img class="mySlides" src="images/InfoGrafis/8.jpg">
 	<img class="mySlides" src="images/InfoGrafis/9.jpg">
 	<img class="mySlides" src="images/InfoGrafis/10.jpg">
-</div>
+</div>-->
 
 <div class="pidato-kaban">
 	<h2> Sekapur Sirih<br><p>Kepala BKPSDMD Kabupaten Merangin</p></h2>
@@ -128,7 +171,7 @@
 	<h3>Rekapitulasi ASN Kabupaten Merangin (per Desember 2024)</h3>
 	<!--style="font-size:2vw;"-->
 
-		<div class="chart-rekap">
+		<!--<div class="chart-rekap">
 			<div class="chart-status-asn">
 			<iframe width="325" height="287" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/8ef122d5280ec801/IQSO9Lmf51jOT78Wk8csCS7eAQ-61IXDUuLdtoS4tRr7DjU?em=2&wdAllowInteractivity=False&Item=Chart%204&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 			</div>
@@ -165,7 +208,7 @@
 			<iframe width="326" height="287" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/8ef122d5280ec801/IQSO9Lmf51jOT78Wk8csCS7eAQ-61IXDUuLdtoS4tRr7DjU?em=2&wdAllowInteractivity=False&Item=Chart%208&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 			</div>
 			
-		<!--<canvas class="flex-item-half1" style="max-width:325px"></canvas>
+		<canvas class="flex-item-half1" style="max-width:325px"></canvas>
 		<canvas class="flex-item-half2" id="myChart2" style="max-width:300px"></canvas>	
 		<canvas class="flex-item-half3" id="myChart3" style="max-width:300px"></canvas>
 		<canvas class="flex-item-half4" id="myChart4" style="max-width:300px"></canvas>
@@ -234,16 +277,13 @@
     .then(count => {
       document.getElementById("visitor-count").innerText = count;
     });
-</script>
-	
-<div class="footer">
-	<p>Copyright © 2025. Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Daerah Kabupaten Merangin. All Rights Reserved.</p>
-</div>-->	
+</script>-->
 	
 <!------------------- BATAS AKHIR CONTENT ---------------------------------->
-	
+
+
 <script src="JavaScript/topnav.js"></script>
-<script src="JavaScript/infografis.js"></script>
+<script src="JavaScript/script.js"></script>
 	
 </body>
 </html>
