@@ -45,22 +45,12 @@ body {
 	font-size: 30px;
 	color: #0077b6;
 }
-/*
-.infoGrafis img {
-	width: 95%;
-	margin: auto;
-}
-.mySlides
-{
-	margin-top: 10px;
-}*/
 .slideshow-container {
 	  padding-top: 20px;
 	  margin: auto;
 	  justify-content: center;
     max-width: 1000px;
 	  width: 90%;
-	  
 }
 .slides {
       display: none;
@@ -82,31 +72,6 @@ body {
     text-align: center;
     background: rgba(0,0,0,0.5);
  }
-
-    /* Next & prev buttons */
-    .prev, .next {
-      cursor: pointer;
-	    position: static;      
-      transform: translateY(-50%);
-      padding: 12px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      transition: 0.3s;
-      background: rgba(0,0,0,0.5);
-
-    }
-      .prev{
-        
-      }
-      .next{
-        
-      }
-
-    .prev:hover, .next:hover {
-      background: rgba(0,0,0,0.8);
-    }
-
     /* Dots */
     .dots {
       text-align: center;
@@ -134,7 +99,7 @@ body {
       justify-content: center;
       gap: 10px;
       margin-top: 10px;
-      margin-bottom: 50px;
+      padding-bottom: 50px;
       flex-wrap: wrap;
     }
 
@@ -197,7 +162,7 @@ body {
 @media only screen and (max-width: 600px) {
   .pidato-kaban p {
 	  font-size: 15px;
-	  padding: 5px;
+	  padding: 10px;
 	}
   .pidato-kaban img{
 	  width: 60%;
@@ -206,19 +171,23 @@ body {
 /* =================================== STATISTIK =========================================*/
 .asn-rekap {
 	margin-top: 20px;
-	margin-bottom: 50px; 
 	position: static;
 	overflow: hidden;
 	background-color: white;
 	text-align: center;
+	
+}
+.asn-rekap h2{
 	font-family: Bahnschrift;
-}
-.asn-rekap h2 {
-	margin-bottom: -20px;
+	font-size: 30px;
 	color: #0077b6;
 }
-.asn-rekap {
+.asn-rekap h2 p {
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: center;
 	color: #0077b6;
+	margin-top: 0px;
 }
 .chart-rekap {
 	display: flex;
