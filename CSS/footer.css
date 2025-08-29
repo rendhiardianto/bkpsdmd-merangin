@@ -22,6 +22,7 @@
  	width: 35%;
 	text-align: left;
 	background-color: #00b4d8;
+	color: white;
 }
 .second img{
 	width: 40px;
@@ -38,7 +39,7 @@
 	padding-bottom: 20px;
 }
 
-.fourth{
+.fourth {
 	width: 22.5%;
 	background-color: #00b4d8;
 	padding-bottom: 20px;

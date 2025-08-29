@@ -33,7 +33,7 @@ body {
 	margin: 0;
 }
 
-/*================ INFO GRAFIS ==========================
+/*================ INFO GRAFIS ==========================*/
 .infoGrafis {
 	background-color: #FFF4F4;
 	padding-top: 10px;
@@ -42,8 +42,10 @@ body {
 	margin-top: 30px;
 	text-align: center;
 	font-family: Bahnschrift;
+	font-size: 30px;
 	color: #0077b6;
 }
+/*
 .infoGrafis img {
 	width: 95%;
 	margin: auto;
@@ -52,45 +54,39 @@ body {
 {
 	margin-top: 10px;
 }*/
-
-    .slideshow-container {
-	  padding-top: 50px;
+.slideshow-container {
+	  padding-top: 20px;
 	  margin: auto;
-      position: relative;
 	  justify-content: center;
-      max-width: 1000px;
+    max-width: 1000px;
 	  width: 90%;
-	  overflow: hidden;
-    }
-
-    .slides {
+	  
+}
+.slides {
       display: none;
-      
-      position: relative;
-    }
+}
 
-    .slides img {
-      width: 100%;
-      display: block;
-    }
+.slides img {
+     width: 100%;
+     display: flex;  
+}
 
-    /* Caption text */
-    .caption {
-      color: #f2f2f2;
-      font-size: 18px;
-      padding: 10px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: rgba(0,0,0,0.5);
-    }
+/* Caption text */
+.caption {
+    color: #f2f2f2;
+	  font-family: Trebuchet;
+    font-size: 18px;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+ }
 
     /* Next & prev buttons */
     .prev, .next {
       cursor: pointer;
-      position: absolute;
-      top: 50%;
+	    position: static;      
       transform: translateY(-50%);
       padding: 12px;
       color: white;
@@ -98,11 +94,14 @@ body {
       font-size: 20px;
       transition: 0.3s;
       background: rgba(0,0,0,0.5);
-      user-select: none;
-    }
 
-    .next { right: 10px; }
-    .prev { left: 10px; }
+    }
+      .prev{
+        
+      }
+      .next{
+        
+      }
 
     .prev:hover, .next:hover {
       background: rgba(0,0,0,0.8);
@@ -140,18 +139,27 @@ body {
     }
 
     .thumbnail-row img {
-      width: 120px;
-      height: 70px;
+      width: 80px;
+      height: 50px;
       object-fit: cover;
       cursor: pointer;
-      opacity: 0.6;
       transition: 0.3s;
     }
 
     .thumbnail-row img:hover, .thumbnail-row img.active-thumb {
       opacity: 1;
     }
-
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .thumbnail-row img {
+      width: 70px;
+      height: 35px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+}
 /* ============================================ SAMBUTAN KABAN ==============================*/
 .pidato-kaban {
 	background-color: beige;
@@ -166,7 +174,7 @@ body {
 	font-size: 50px;
 	color: #0077b6;
 }
-.pidato-kaban h2 p{
+.pidato-kaban h2 p {
 	font-family: Bahnschrift;
 	font-size: 20px;
 	text-align: center;
@@ -209,12 +217,13 @@ body {
 	margin-bottom: -20px;
 	color: #0077b6;
 }
-.asn-rekap h3 {
+.asn-rekap {
 	color: #0077b6;
 }
 .chart-rekap {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 20px;
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
@@ -222,5 +231,5 @@ body {
 	padding: 20px;
 }
 .chart-rekap canvas{
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 }
