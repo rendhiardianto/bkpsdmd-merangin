@@ -88,7 +88,8 @@ body {
 @media only screen and (max-width: 700px) {
   .content a{
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 30px;
     font-family: bahnschrift;
     color: white;
