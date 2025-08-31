@@ -32,38 +32,10 @@ body {
 	margin: 0;
 }
 /* ============================================ CONTENT ==============================*/
-.pengumuman {
+.coomingSoon {
 	text-align: center;
-	font-size: 30px;
+   font-family: 'Courier New', Courier, monospace;
+	font-size: 50px;
 	font-family: Segoe UI;
 	color: #0077b6;
-}
-.breadcrumb {
-   background-color: aliceblue;
-   margin: 10px;
-   text-align: center; 
-   padding: 20px;
-   width: 50%;
-   
-}
-.pengumuman h1 {
-   font-size: 30px;
-}
-.pengumuman p {
-   font-size: 20px;
-   text-align: justify;
-   width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-   .pengumuman {
-      font-size: 40px;
-   }
-   .breadcrumb{
-   text-align: center; 
-   padding-left: 20px; 
-   padding-right: 20px;
-   width: 100%;
-
-}
 }

@@ -158,6 +158,9 @@ body {
 	margin-right: 0;
 	width: 300px;
 }
+.isiPidato {
+  font-style: italic;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .pidato-kaban p {
